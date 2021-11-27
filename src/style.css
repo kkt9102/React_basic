@@ -1,0 +1,10 @@
+/* flex */
+body * {display:flex;}
+
+nav {flex-wrap:wrap;}
+ul {flex-wrap:wrap; flex-basis:100%; margin-top:1rem;}
+.ul_title {font-size:2rem; font-weight:900; flex-basis:100%; padding:0.5rem 0;}
+.dots_p {position:relative; margin-left:2rem; flex-basis:100%;}
+.dots_p::after {content:''; position:absolute; left:-1rem; top:50%; width:0.4rem; height:0.4rem; background:rgb(234, 130, 255);}
+.link_par {position:relative; margin-left:2rem; flex-basis:100%;}
+.link_par::after {content:''; position:absolute; left:-1.5rem; top:50%; width:1rem; height:0.4rem; background:#f0ad41;}
