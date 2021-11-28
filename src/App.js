@@ -56,6 +56,7 @@ function App() {
         <li className="dots_p">어떤 값이 undifined일 수 있다면 OR(||) 연사자를 사용하묜 해당 값이 undifined일 떄 사용할 값을 지정할 수 있으므로 오류코드 송출을 방지할 수 있다.</li>
         <li className="link_par">undifined 출력 보러가기</li>
         <li className="dots_p">단 JSX내부에서 undifined를 선언하면 정상작동된다.</li>
+        <li className="dots_p">만약 변수의 값이 undifined일 때 부여줄 문구가 있다면 <span className="point_f">return 〈div〉{name || '출력할 메시지'}〈/div〉</span>로 입력해주면 된다.</li>
       </ul>
       </nav>
     </>
