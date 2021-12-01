@@ -58,6 +58,28 @@ function App() {
         <li className="dots_p">단 JSX내부에서 undifined를 선언하면 정상작동된다.</li>
         <li className="dots_p">만약 변수의 값이 undifined일 때 부여줄 문구가 있다면 <span className="point_f">return 〈div〉{name || '출력할 메시지'}〈/div〉</span>로 입력해주면 된다.</li>
       </ul>
+      <ul>
+        <li className="ul_title">InlineStyle 작성방법</li>
+        <li className="dots_p">inline style작성방법은 문자열 형태로 넣어주는 것이 아닌 객체형태로 넣어주어야 한다.</li>
+        <li className="dots_p">만약 style중에 background-color 처럼 '-' 이 들어가면 '-'대신 대문자로 작성한다.</li>
+        <li className="dots_p">즉 background-color 이 아닌 backgroundColor 로 작성해준다.</li>
+        <li className="link_par">InlineStyle 작성 보러가기(객체 미리 선언)</li>
+        <li className="link_par">InlineStyle 작성 보러기가(style값 바로 지정하기)</li>
+      </ul>
+      <ul>
+        <li className="ul_title">꼭 닫아야 하는 태그</li>
+        <li className="dots_p">HTML 코드중에서 닫지 않아도 정상작동하는 태그들이 있다.</li>
+        <li className="dots_p">예를들어 '〈br〉' 이나 '〈input〉'태그들인다 JSX에서는 이런 태그들도 닫지않으면 콘솔에서부터 오류가 출력된다.</li>
+        <li className="link_par">오류코드 보러가기</li>
+        <li className="dots_p">만약 태그 사이에 별도의 내용이 들어가지 않는다면 <span className="point_f">〈div/〉</span> 처럼 표시할 수 있다.</li>
+      </ul>
+      <ul>
+        <li className="ul_title">주석 달기</li>
+        <li className="dots_p">JSX에서 주석을 작성하는 법은 <span className="point_f">｛/* 주석내용입력 */｝</span>이런식으로 작성한다.</li>
+        <li className="dots_p">일반적인 주석 작성인 // 이나 /* */ 는 페이지에 그대로 출력된다.</li>
+        <li className="dots_p">만약 시작태그를 여러줄로 작성하게 된다면 // 의 사용이 가능하다.</li>
+        <li className="link_par">주석 작성코드 보러가기</li>
+      </ul>
       </nav>
     </>
   );
