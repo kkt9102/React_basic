@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Link } from 'react-router-dom';
 import './index.css';
 import App from './App';
+import grammar_1 from './Grammar_1';
 import reportWebVitals from './reportWebVitals';
 
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    {/* <grammar_1 /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

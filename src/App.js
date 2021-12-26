@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import './common.css';
 import './style.css';
+import MyComponent from './MyComponent';
 
 function App() {
   const name = '리액트';
@@ -79,6 +80,49 @@ function App() {
         <li className="dots_p">일반적인 주석 작성인 // 이나 /* */ 는 페이지에 그대로 출력된다.</li>
         <li className="dots_p">만약 시작태그를 여러줄로 작성하게 된다면 // 의 사용이 가능하다.</li>
         <li className="link_par">주석 작성코드 보러가기</li>
+      </ul>
+      <ul>
+        <li className='ul_title'>클래스형 컴포넌트</li>
+        <li className='dots_p'>현재까지 사용했던 컴포넌트는 함수형 컴포넌트이며 코드는 <span className="inner_link_par">해당문서</span>와 같이 이루어져 있다.</li>
+        <li className='dots_p'>컴포넌트를 선언하는 방법은 두가지가 있는데 하나는 함수형 컴포넌트이고, 또 다른 하나는 클래스형 컴포넌트이다.</li>
+        <li className='link_par'>클래스형 컴포넌트 코드 보러가기</li>
+        <li className='dots_p'>컴포넌트가 클래스형으로 바뀌었지만 역할은 이전에 보았던 함수형 컴포넌트와 똑같다.</li>
+        <li className='dots_p'>다만 클래스형 컴포넌트와 함수형 컴포넌트의 차이점은 클래스형 컴포넌트에서는 state 기능 및 라이프사이클 기능을 사용할 수 있다는 점과 임의의 메서드를 정의할 수 있다는 점이 있다.</li>
+        <li className='dots_p'>클래스형 컴포넌트에서는 반드시 render 함수가 꼭 있어야 하고 그 안에서 보여 주어야 할 JSX를 반환해야 한다.</li>
+      </ul>
+      <ul>
+        <li className='ul_title'>함수형 컴포넌트의 장점</li>
+        <li className='dots_p'>클래스형 컴포넌트보다 쉬운 작성법</li>
+        <li className='dots_p'>클래스형 컴포넌트보다 메모리자원을 적게 사용</li>
+        <li className='dots_p'>프로젝트 완성 후 빌드하여 배포를 할 경우 파일크기가 더 작음</li>
+      </ul>
+      <ul>
+        <li className='ul_title'>함수형 컴포넌트의 단점</li>
+        <li className='dots_p'>state와 라이프사이클 API의 사용이 불가능하다.</li>
+        <li className='dots_p'>단 리액트 v16.8 업대이트 이후 Hooks이라는 기능이 도입되면서 해결이 되었다.</li>
+      </ul>
+      <ul>
+        <li className='ul_title'>컴포넌트 생성</li>
+        <li className='dots_p'>컴포넌트를 만드려면 컴포넌트 코드를 선언해야 한다.</li>
+        <li className='dots_p'>함수형 컴포넌트와는 다른 작성법을 사용하는데 함수형 컴포넌트에선 function 키워드를 사용하였지만 클래스형 컴포넌트에서는 <span className="point_f">() =&gt; {}</span>를 사용하여 함수를 만들어준다.</li>
+      </ul>
+      <ul>
+        <li className='ul_title'>모듈 내보내기(export)</li>
+        <li className='dots_p'>클래스형 컴포넌트에서 맨아래 코드는 'export default $$$$' 로 이루어져 있다.</li>
+        <li className='dots_p'>이 코드는 다른 파일에서 이 파일을 improt할 때 위에서 선언한 $$$ 클래스를 불러오도록 설정한다.</li>
+      </ul>
+      <ul>
+        <li className='ul_title'>모듈 불러오기(import)</li>
+        <li className='dots_p'>클래스형 컴포넌트를 불러올 때는 기존에 사용하는 function을 사용하는게 아니라 화살표형 함수를 사용한다.</li>
+        <li className='linl_par'>코드 보러가기</li> {/* classcomponent.js */}
+      </ul>
+      <ul>
+        <li className='ul_title'>props</li>
+        <li className='dots_p'>props는  properties를 줄인 표현으로 컴포넌트 속성을 설정할 때 사용하는 요소이다. props 값은 해당 컴포넌트를 불러와 사용하는 부모 컴포넌트에서 설정할 수 있다.</li>
+      </ul>
+      <ul>
+        <li className='ul_title'>JSX 내부에서 props렌더링</li>
+        <li className='dots_p'></li>
       </ul>
       </nav>
     </>
