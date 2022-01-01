@@ -122,7 +122,11 @@ function App() {
       </ul>
       <ul>
         <li className='ul_title'>JSX 내부에서 props렌더링</li>
-        <li className='dots_p'></li>
+        <li className='dots_p'>props 값은 컴포넌트 함수의 파라미터로 받아 와서 사용할 수 있다. props를 렌더링 할 때 JSX 내부에서 {}기호로 감싸주면 된다.</li>
+      </ul>
+      <ul>
+        <li className='ul_title'>컴포넌트를 사용할 때 props 값 지정하기</li>
+        <li className='dots_p'>props 기본값 : defaultProps</li>
       </ul>
       </nav>
     </>
