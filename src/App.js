@@ -3,9 +3,14 @@ import './App.css';
 import './common.css';
 import './style.css';
 import MyComponent from './MyComponent';
+import defaultPropsName from './defaultsName';
+import testDefault from './testDefault';
 
 function App() {
   const name = '리액트';
+  const App = () => {
+    return <testDefault/>
+  }
   var test ='React';
   return (
     <>
@@ -126,7 +131,9 @@ function App() {
       </ul>
       <ul>
         <li className='ul_title'>컴포넌트를 사용할 때 props 값 지정하기</li>
+        <li className='dots_p'>props 값을 따로 지정하지 않았을 때 보여질 기본값을 설정하는 방법</li>
         <li className='dots_p'>props 기본값 : defaultProps</li>
+        <li className='dots_p'><testDefault></testDefault></li>
       </ul>
       </nav>
     </>
